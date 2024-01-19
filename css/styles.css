@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Fonts  */
+@font-face {
+    font-family: lexend;
+    src: url(/assets/font/lexendDeca/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: spaceMono;
+    src: url(/assets/font/spaceMono/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: spaceMonoRegular;
+    src: url(/assets/font/spaceMono/SpaceMono-Regular.ttf);
+}
+
+
+:root {
+    /* colors  */
+    --yellow : #FCB72B;
+    --dark-navy : #495567;
+    --dim-grey : #939CAA;
+    --light-grey : #E5ECF4;
+    --snow : #F2F5F9;
+    --light-yellow : #FFF4DF;
+
+    /* Fonts  */
+    --fontHeading : spaceMono;
+    --fontBody : lexend;
+    --font: spaceMonoRegular;
+
+
+    /* Custom Variables  */
+    --main-width : 70%;
+}
+
+
+body {
+    display: initial;
+}
+
+
+
+/* Typography and Fonts  */
+
+h1 {
+    font-family: var(--fontHeading);
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+}
+
+h2 {
+    font-family: var(--fontHeading);
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+}
+
+h3 {
+    font-family: var(--fontHeading);
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+}
+
+h4 {
+    font-family: var(--fontHeading);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+}
+
+p {
+    font-family: var(--fontBody);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* Button  */
+.button {
+    background: var(--yellow);
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 4px 15px;
+    border: 2px solid var(--yellow);
+    font-family: var(--font);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    background: var(--snow);
+    border: 2px solid var(--snow);
+    color: var(--dim-grey);
+}
+
+
+.button.fill {
+    background-color: transparent;
+    color: var(--yellow);
+}
+
+
+
+.button.fill:hover {
+    background: var(--snow);
+    border: 2px solid var(--snow);
+    color: var(--dim-grey);
+}
+
+/* INdex  */
+.index {
+    font-family: var(--fontHeading);
+    background: var(--yellow);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--dark-navy);
+    
+}
+
+
+/* The Navbar  */
+nav {
+    width: 100%;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-wrapper {
+    width: var(--main-width);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* The Navbar Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    padding-inline: 10px
+}
+
+.nav-links li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--fontHeading);
+    color: var(--dim-grey);
+    transition: all .5s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: var(--dark-navy);
+}
+
+
+/* The Header  */
+header {
+    width: 100%;
+    height: 600px;
+    background: url(/assets/images/home-hero-desktop.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: last ;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-title {
+    width: 100%;
+}
+
+.header-title h1 {
+    color: white;
+    width: 50%;
+    padding: 20px 0px 20px 15%;
+}
+
+
+/* Header Details  */
+.circle {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    top: 120px;
+    right: -30px;
+}
+.line {
+    background: transparent;
+    width: 90%;
+    height: 60px;
+
+    display: flex;
+    align-items: last baseline;
+    justify-content: last baseline;
+}
+
+.across {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    top: 45px;
+}
+
+.header-paragraph {
+    color: white;
+    width: 160%;
+}
+
+
+.header-details {
+    width: 100%;
+    height: 100px;
+    background: transparent;
+
+    display: flex;
+    gap: 10px;
+}
+
+
+/* The Services  */
+.services-wrapper {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.services-container {
+    width: var(--main-width);
+    height: 300px;
+    padding: 60px 0px;
+    margin-bottom: 100px;
+}
+
+.service-line {
+    padding: 10px 0px;
+    stroke: var(--light-grey);
+    width: 400px;
+}
+
+.services {
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
