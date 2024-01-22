@@ -6,17 +6,17 @@
 /* Fonts  */
 @font-face {
   font-family: lexend;
-  src: url(/assets/font/lexendDeca/LexendDeca-VariableFont_wght.ttf);
+  src: url(../assets/font/lexendDeca/LexendDeca-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: spaceMono;
-  src: url(/assets/font/spaceMono/SpaceMono-Bold.ttf);
+  src: url(../assets/font/spaceMono/SpaceMono-Bold.ttf);
 }
 
 @font-face {
   font-family: spaceMonoRegular;
-  src: url(/assets/font/spaceMono/SpaceMono-Regular.ttf);
+  src: url(../assets/font/spaceMono/SpaceMono-Regular.ttf);
 }
 
 :root {
@@ -187,7 +187,7 @@ nav {
 header {
   width: 100%;
   height: 600px;
-  background: url(assets/images/home-hero-desktop.jpg);
+  background: url(../assets/images/home-hero-desktop.jpg);
   background-size: cover;
   background-position: 50% 50%;
 
