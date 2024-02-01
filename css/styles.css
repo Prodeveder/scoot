@@ -885,11 +885,13 @@ footer {
 .open__FAQ__answer {
   display: block;
   cursor: pointer;
+   transform: scale(1.5);
 }
 
 .close__FAQ__answer {
   display: none;
   cursor: pointer;
+   transform: scale(1.5);
 }
 
 .faq__answer {
