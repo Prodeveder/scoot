@@ -21,12 +21,16 @@
 
 :root {
   /* colors  */
-  --yellow: #fcb72b;
+  --yellow: #438584;
+  /* --yellow: #fcb72b; */
+
   --dark-navy: #495567;
   --dim-grey: #939caa;
   --light-grey: #e5ecf4;
   --snow: #f2f5f9;
-  --light-yellow: #fff4df;
+  --light-yellow: #43858427;
+  /* --light-yellow: #fff4df; */
+
   --footer: #333a44;
 
   /* Fonts  */
@@ -47,9 +51,45 @@ body {
   overflow-x: hidden;
 }
 
+.light__box {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #050c0c2d;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.light__box .contact__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.light__box .menu__close {
+  width: var(--main-width);
+  padding: 5px 30px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.light__box .menu__close .close__img {
+  transform: scale(1.5);
+  padding-bottom: 10px;
+}
+
+.light__box .contact__grid {
+  background: var(--snow);
+  padding: 30px;
+}
+
 /* The Nav  */
 nav {
-  height: 60px;
+  height: 70px;
   margin: 5px 0px 5px 0px;
   width: var(--main-width);
 
@@ -66,6 +106,7 @@ nav {
   justify-content: center;
 
   position: relative;
+  padding: 10px 0px 0px 0px;
 }
 
 .nav__brand {
@@ -78,6 +119,25 @@ nav {
   height: 100%;
   position: relative;
   top: -1px;
+}
+
+.menu__img,
+.close__img {
+  transition: all .2s ease-in-out;
+}
+
+.close__img {
+  padding: 10px 0px 0px 0px;
+}
+
+.close__img:hover,
+.menu__img:hover {
+  opacity: .7;
+}
+
+.nav__logo {
+  width: 180px;
+  height: auto;
 }
 
 .navbar {
@@ -191,10 +251,16 @@ header {
   background: url(../assets/images/header/main-desktop.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.header__overlay {
+  width: 100%;
+  height: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(0 0 0 / 0.5);
 }
 
 .header__content {
@@ -300,7 +366,7 @@ header {
 .service__header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 0px 0px 25px 0px;
 }
@@ -310,7 +376,7 @@ header {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.5px;
-  text-align: left;
+  text-align: center;
   color: var(--yellow);
   cursor: pointer;
 }
@@ -318,12 +384,13 @@ header {
 .service__header p {
   padding: 20px 0px 0px 0px;
   width: 85%;
-  text-align: left;
+  text-align: center;
   font-family: var(--fontBody);
   font-size: 1rem;
   line-height: 25px;
   font-weight: 300;
   color: var(--dim-grey);
+  cursor: pointer;
 }
 
 .services_wrapper {
@@ -355,6 +422,17 @@ header {
 .service {
   width: 100%;
   height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.1);
 }
 
 .service__title {
@@ -362,7 +440,7 @@ header {
   font-size: 1.5rem;
   line-height: 28px;
   letter-spacing: -2.5px;
-  text-align: left;
+  text-align: center;
   color: var(--dark-navy);
   cursor: pointer;
   padding: 10px 0px;
@@ -373,7 +451,34 @@ header {
   font-size: 1rem;
   line-height: 25px;
   font-weight: 300;
+  text-align: center;
   color: var(--dim-grey);
+}
+
+.service__icon {
+  background: var(--yellow);
+  border-radius: 100%;
+  border: 2px solid var(--yellow);
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__img {
+  width: 32px;
+  fill: var(--snow);
+}
+
+.service__icon:hover {
+  background: transparent;
+}
+
+.service__icon:hover > .service__img {
+  fill: var(--yellow);
 }
 
 /* The Details  */
@@ -451,6 +556,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .detail__image:nth-child(1) {
@@ -469,6 +575,7 @@ header {
 
 .detail__img:hover {
   border: 10px solid var(--yellow);
+  filter: brightness(1.2);
 }
 
 .detail__circle {
@@ -593,6 +700,49 @@ header {
 .contact__form button {
   width: 150px;
   height: 40px;
+}
+
+/* Contact Details List   */
+
+.contact__details {
+  list-style: none;
+  margin: 0px 0px 0px 0px;
+}
+
+.contact__details__list li {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact__details__list li a {
+  text-decoration: none;
+  color: var(--dim-grey);
+  font-family: var(--fontHeading);
+  font-weight: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+
+
+  transition: all 0.2s ease-in-out;
+  font-size: .9rem;
+}
+
+.contact__details__list li a svg {
+  padding-right: .5rem;
+  fill: var(--yellow);
+}
+
+.addr {
+  display: none;
+}
+
+.contact__details li a:hover {
+  color: var(--yellow);
 }
 
 /* The Values  */
@@ -1112,6 +1262,32 @@ footer {
 
 /* Tablet Form Factor  */
 @media (max-width: 750px) {
+  .contact__details__list li {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact__details__list li a {
+    font-size: .8rem;
+  }
+  .addr {
+    display: initial;
+    color: var(--yellow);
+  }
+
+  .contact__details__list li a.adr {
+    width: 90%;
+    text-align: center;
+  }
+  .contact__details__list li a svg.adrI {
+    display: none;
+  }
+  .about__header {
+    font-size: 28px;
+  }
   .about__img {
     width: 200px;
     height: 200px;
@@ -1349,6 +1525,16 @@ footer {
   .faq__answer {
     font-size: .9rem;
   }
+  .service__title {
+    font-family: var(--fontHeading);
+    font-size: 1.3rem;
+    line-height: 28px;
+    letter-spacing: -2.5px;
+    text-align: center;
+    color: var(--dark-navy);
+    cursor: pointer;
+    padding: 10px 0px;
+  }
 
 
 }
@@ -1356,6 +1542,7 @@ footer {
 /* Mobile Form Factor  */
 
 @media (max-width: 500px) {
+
   .header__banner__detail p {
     width: 100%;
     text-align: center;
@@ -1372,6 +1559,9 @@ footer {
   .service__header h1 {
     font-size: 36px;
     width: 100%;
+  }
+  .service__header p {
+    font-size: .8rem;
   }
 
   .copyright__content span {
