@@ -10,102 +10,301 @@
     <script src="js/index.js" defer></script>
   </head>
   <body>
+    <div class="light__box">
+      <div class="contact__container">
+        <div class="menu__close close__lightbox">
+          <svg
+            class="close__img"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+          >
+            <g fill="#438584" fill-rule="evenodd">
+              <path d="M3.19.733l13.923 13.924-2.61 2.61L.579 3.343z" />
+              <path d="M.579 14.657L14.503.733l2.61 2.61L3.19 17.267z" />
+            </g>
+          </svg>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__details">
+            <h1>Contact</h1>
+            <p>
+              I'm excited to learn about your needs and how I can be of
+              assistance. Please fill out the form below, and I'll be in touch
+              promptly.
+            </p>
+            <ul class="contact__details__list">
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 -960 960 960"
+                    width="24"
+                  >
+                    <path
+                      d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                    />
+                  </svg>
+                  <span>094 032 2340</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 -960 960 960"
+                    width="24"
+                  >
+                    <path
+                      d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                    />
+                  </svg>
+                  <span>sizwe@nomndayitech.co.za</span>
+                </a>
+              </li>
+              <li>
+                <a class="adr" href="#">
+                  <svg
+                    class="adrI"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 -960 960 960"
+                    width="24"
+                  >
+                    <path
+                      d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                    />
+                  </svg>
+                  <span>
+                    <span class="addr">Address : </span>
+                    Office 0602, Works@Market ,47 Von Brandis Street
+                    ,Johannesburg, 2001</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="contact__form">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email"
+            />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+  
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <nav>
       <div class="menu">
-        <img src="assets/icons/hamburger.svg" alt="" class="menu__img" />
+        <svg
+          class="menu__img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="16"
+        >
+          <g fill="#438584" fill-rule="evenodd">
+            <path
+              d="M0 0h19.692v3.692H0zM0 6.154h19.692v3.692H0zM0 12.308h19.692V16H0z"
+            />
+          </g>
+        </svg>
       </div>
       <div class="menu__container">
         <div class="menu__navbar">
           <div class="menu__close">
-            <img
-              src="assets/icons/close.svg"
-              alt="close icon"
+            <svg
               class="close__img"
-            />
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+            >
+              <g fill="#438584" fill-rule="evenodd">
+                <path d="M3.19.733l13.923 13.924-2.61 2.61L.579 3.343z" />
+                <path d="M.579 14.657L14.503.733l2.61 2.61L3.19 17.267z" />
+              </g>
+            </svg>
           </div>
 
           <ul class="mobile--navbar">
-            <li><a href="about.html">About</a></li>
-            <li><a href="page.html">Location</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
 
-            <li><a href="#">Careers</a></li>
+            <li><a href="#">Services</a></li>
           </ul>
 
           <div class="nav__contact__mobile">
-            <a href="#" class="button"> Get Scootin </a>
+            <a href="#" class="button openLightBox"> Get Scootin </a>
           </div>
         </div>
       </div>
       <div class="nav__main">
         <div class="nav__brand">
-          <a href="#">
-            <img src="assets/logo.svg" alt="Brand Logo" class="nav__logo" />
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Brand Logo" class="nav__logo" />
           </a>
         </div>
         <ul class="navbar">
-          <li><a href="about.html">About</a></li>
-            <li><a href="page.html">Location</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
         </ul>
       </div>
       <div class="nav__contact">
-        <a href="#" class="button"> Get Scootin </a>
+        <a href="#" class="button openLightBox"> Contact Us</a>
       </div>
     </nav>
 
     <header>
-      <div class="header__content">
-        <div class="header__title">Lorem ipsum dolor sit.</div>
-        <div class="header_description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ab
-          nesciunt ipsa a velit dolorum, inventore quis, quisquam adipisci
-          voluptas, quaerat aut quibusdam cum omnis nam dolore veritatis
-          obcaecati alias.
+      <div class="header__overlay">
+        <div class="header__content">
+          <div class="header__title">WELCOME TO NOMNDAYI TECHNOLOGIES</div>
+          <div class="header_description">
+            Embracing the forefront of technology, our specialized team excels
+            in providing unparalleled technical support, setting up robust
+            internet solutions, and weaving intricate web development
+            masterpieces. From unraveling complexities to crafting digital
+            journeys, we are your comprehensive destination for all things tech.
+          </div>
+          <a href="#" class="button">Learn More</a>
         </div>
-        <a href="#" class="button">Get Scootin</a>
       </div>
     </header>
 
     <div class="services__container">
       <div class="service__header">
-        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Services We Provide</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit, incidunt porro numquam nulla illo labore repellat at
-          ipsa nesciunt quis eum tempora dolorem fugiat in, maiores, non sed
-          neque dignissimos.
+          Welcome to Nomndayi Technologies, where innovation meets excellence.
+          Our comprehensive suite of services is designed to elevate your
+          digital experience. From robust technical support ensuring the smooth
+          operation of your systems to cutting-edge web development services
+          crafting your online presence, we are your trusted partner in
+          navigating the ever-evolving world of technology.
         </p>
       </div>
       <div class="services_wrapper">
-        <img src="assets/patterns/line-grey.svg" alt="" class="services_line" />
         <div class="services">
           <div class="service">
-            <img src="assets/icons/locate.svg" alt="" class="service__img" />
-            <div class="service__title">Lorem, ipsum dolor.</div>
+            <div class="service__icon">
+              <?xml version="1.0" encoding="utf-8"?><svg
+                class="service__img"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 117.93 122.88"
+                style="enable-background: new 0 0 117.93 122.88"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M8.1,0h101.74c2.88,0,5.23,2.36,5.23,5.23v28.41c0,2.88-2.36,5.23-5.23,5.23l-15.27,0v5.35h15.27 c2.88,0,5.23,2.36,5.23,5.23v28.41c0,2.88-2.36,5.23-5.23,5.23H94.57v15.18h7.85v7.83h15.51v9h-15.51v7.76l-24.69,0v-7.76l-35.9,0 v7.76l-24.69,0v-7.76l-17.14,0v-9h17.14v-7.83h7.84V83.11H8.1c-2.88,0-5.23-2.36-5.23-5.23V49.46c0-2.88,2.35-5.23,5.23-5.23h16.88 v-5.35H8.1c-2.88,0-5.23-2.36-5.23-5.23l0-28.41C2.86,2.35,5.22,0,8.1,0L8.1,0z M15.85,55.93h5.98V71.4h-5.98V55.93L15.85,55.93z M97.99,14.7c2.62,0,4.74,2.12,4.74,4.74c0,2.62-2.12,4.74-4.74,4.74c-2.62,0-4.74-2.12-4.74-4.74 C93.25,16.82,95.37,14.7,97.99,14.7L97.99,14.7z M79.94,14.7c2.62,0,4.74,2.12,4.74,4.74c0,2.62-2.12,4.74-4.74,4.74 c-2.62,0-4.74-2.12-4.74-4.74C75.2,16.82,77.33,14.7,79.94,14.7L79.94,14.7z M48.89,11.7h5.98v15.47h-5.98V11.7L48.89,11.7z M32.37,11.7h5.98v15.47h-5.98V11.7L32.37,11.7z M15.85,11.7h5.98v15.47h-5.98V11.7L15.85,11.7z M97.99,58.93 c2.62,0,4.74,2.12,4.74,4.74c0,2.62-2.12,4.74-4.74,4.74c-2.62,0-4.74-2.12-4.74-4.74C93.25,61.05,95.37,58.93,97.99,58.93 L97.99,58.93z M79.94,58.93c2.62,0,4.74,2.12,4.74,4.74c0,2.62-2.12,4.74-4.74,4.74c-2.62,0-4.74-2.12-4.74-4.74 C75.2,61.05,77.33,58.93,79.94,58.93L79.94,58.93z M48.89,55.93h5.98V71.4h-5.98V55.93L48.89,55.93z M32.37,55.93h5.98V71.4h-5.98 V55.93L32.37,55.93z M90.07,104.98c3.1,0,5.61,2.51,5.61,5.61c0,3.1-2.51,5.61-5.61,5.61c-3.1,0-5.61-2.51-5.61-5.61 S86.98,104.98,90.07,104.98L90.07,104.98z M29.48,104.98c3.1,0,5.61,2.51,5.61,5.61c0,3.1-2.51,5.61-5.61,5.61 c-3.1,0-5.61-2.51-5.61-5.61S26.39,104.98,29.48,104.98L29.48,104.98z M41.83,106.12h35.9v-7.83l7.84,0V83.11H33.98v15.18h7.85 L41.83,106.12L41.83,106.12L41.83,106.12z M33.98,44.23h51.59v-5.35H33.98V44.23L33.98,44.23z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="service__title">Infrastructure and Support</div>
             <div class="service_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Incidunt, vel, numquam asperiores illum quaerat delectus culpa
-              tempora eius facere fugit nam reprehenderit.
+              IT support for a seamless user experience, efficient connectivity,
+              and secure systems. Plus, data protection and disaster recovery
+              for complete peace of mind.
             </div>
           </div>
 
           <div class="service">
-            <img src="assets/icons/locate.svg" alt="" class="service__img" />
-            <div class="service__title">Lorem, ipsum dolor.</div>
+            <div class="service__icon">
+              <svg
+                class="service__img"
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 122.88 114.3"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill-rule: evenodd;
+                    }
+                  </style>
+                </defs>
+                <title>encrypted</title>
+                <path
+                  class="cls-1"
+                  d="M61.46,24.21c11.15,7.07,21.23,10.42,29.87,9.62C92.84,64.38,81.56,82.42,61.57,90c-19.3-7-30.72-24.31-29.87-56.58,10.15.53,20.11-1.66,29.76-9.16Zm14.14-5.3v4.38c1.16.5,2.31.95,3.45,1.37v-4h4a5.06,5.06,0,1,0,0-3.45H77.32a1.71,1.71,0,0,0-1.72,1.72ZM0,36.48a5.06,5.06,0,1,1,7.09,4.63V51.22H25.43c.2,1.17.41,2.32.64,3.45H5.37A1.71,1.71,0,0,1,3.65,53V41.34A5.05,5.05,0,0,1,0,36.48Zm13.91-3.36a5.05,5.05,0,0,1,10-.94c0,.59,0,1.18,0,1.77a5.1,5.1,0,0,1-3.31,3.94v4h3.67c.09,1.17.2,2.32.32,3.45H18.91a1.72,1.72,0,0,1-1.72-1.72V37.85a5,5,0,0,1-3.28-4.73ZM.08,64.49a5.06,5.06,0,0,1,9.81-1.73H28.16c.37,1.18.77,2.33,1.18,3.45H9.89A5.06,5.06,0,0,1,.08,64.49ZM11,85.54a5.06,5.06,0,0,1,3.26-4.73V74.16A1.72,1.72,0,0,1,16,72.44H32.05c.59,1.19,1.22,2.34,1.88,3.46H17.71v4.86A5.06,5.06,0,1,1,11,85.54ZM84.4,114.3a5.06,5.06,0,1,0-4.62-7.1H69.67V94.72q-1.68.93-3.45,1.77v12.44a1.72,1.72,0,0,0,1.72,1.72H79.55a5.05,5.05,0,0,0,4.85,3.65Zm3.37-13.91A5.06,5.06,0,1,0,83,93.66h-4V88.18q-1.67,1.45-3.45,2.76v4.45a1.71,1.71,0,0,0,1.72,1.72H83a5,5,0,0,0,4.73,3.28ZM56.4,114.21a5.05,5.05,0,0,0,1.73-9.8V97.07C57,96.56,55.8,96,54.68,95.43v9a5.05,5.05,0,0,0,1.72,9.8Zm-21-10.91A5.06,5.06,0,0,0,40.08,100h6.65a1.74,1.74,0,0,0,1.72-1.73V91.68C47.26,90.85,46.11,90,45,89v7.56H40.13a5.06,5.06,0,1,0-4.78,6.71Zm87.53-66.82a5.06,5.06,0,1,0-7.09,4.63V51.22H98c-.18,1.17-.39,2.32-.62,3.45h20.18A1.71,1.71,0,0,0,119.23,53V41.34a5.05,5.05,0,0,0,3.65-4.86ZM109,33.12a5.05,5.05,0,0,0-9.81-1.71,5.69,5.69,0,0,0,0,3.51,5.1,5.1,0,0,0,3,3v4H99c-.08,1.17-.17,2.32-.28,3.45H104a1.72,1.72,0,0,0,1.72-1.72V37.85A5,5,0,0,0,109,33.12ZM122.8,64.49A5.06,5.06,0,0,0,113,62.76H95.25c-.38,1.18-.78,2.33-1.21,3.45H113a5.06,5.06,0,0,0,9.81-1.72ZM111.88,85.54a5.06,5.06,0,0,0-3.26-4.73V74.16a1.72,1.72,0,0,0-1.73-1.72H91.28c-.61,1.19-1.26,2.34-1.93,3.46h15.82v4.86a5.06,5.06,0,1,0,6.71,4.78ZM84.4,0a5.06,5.06,0,1,1-4.62,7.09H69.67V20.48c-1.14-.6-2.29-1.22-3.45-1.88V5.37a1.71,1.71,0,0,1,1.72-1.72H79.55A5.05,5.05,0,0,1,84.4,0ZM56.4.08a5.06,5.06,0,0,1,1.73,9.81v8.22q-1.73,1.17-3.45,2.16V9.89A5.06,5.06,0,0,1,56.4.08ZM35.35,11a5.06,5.06,0,0,1,4.73,3.26h6.65A1.74,1.74,0,0,1,48.45,16v7.35c-1.15.48-2.3.91-3.46,1.29V17.71H40.13A5.06,5.06,0,1,1,35.35,11Zm15,39.13h1.11V48.08a10.61,10.61,0,0,1,2.94-7.35,9.77,9.77,0,0,1,14.28,0,10.61,10.61,0,0,1,2.94,7.35v2.05h1.11a1.66,1.66,0,0,1,1.65,1.65V69.16a1.65,1.65,0,0,1-1.65,1.64H50.37a1.65,1.65,0,0,1-1.65-1.64V51.78a1.66,1.66,0,0,1,1.65-1.65Zm9.84,11.1-1.77,4.65h6.24L63,61.17a3.24,3.24,0,1,0-2.83.06ZM54.6,50.13H68.52V48.08a7.51,7.51,0,0,0-2.06-5.2,6.7,6.7,0,0,0-9.8,0,7.51,7.51,0,0,0-2.06,5.2v2.05Z"
+                />
+              </svg>
+            </div>
+            <div class="service__title">
+              Cybersecurity Solutions and IT Consulting
+            </div>
             <div class="service_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Incidunt, vel, numquam asperiores illum quaerat delectus culpa
-              tempora eius facere fugit nam reprehenderit.
+              Defending your data and optimizing your IT through: cybersecurity
+              services, strategic IT consulting, and deep expertise in software
+              and system security.
             </div>
           </div>
 
           <div class="service last--service">
-            <img src="assets/icons/locate.svg" alt="" class="service__img" />
-            <div class="service__title">Lorem, ipsum dolor.</div>
+            <div class="service__icon">
+              <?xml version="1.0" encoding="utf-8"?><svg
+                class="service__img"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 94.35"
+                style="enable-background: new 0 0 122.88 94.35"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M90.37,26.48h25.48c1.94,0,3.71,0.79,4.97,2.06c1.28,1.28,2.06,3.04,2.06,4.97v53.82 c0,1.94-0.79,3.71-2.06,4.97c-1.28,1.28-3.04,2.06-4.97,2.06H90.37c-1.94,0-3.71-0.79-4.97-2.06c-1.28-1.28-2.06-3.04-2.06-4.97 V33.5c0-1.94,0.79-3.71,2.06-4.97C86.68,27.25,88.43,26.48,90.37,26.48L90.37,26.48z M3.05,0h106.12c1.68,0,3.05,1.37,3.05,3.05 v18.44h-6.48V8.44c0-1.48-1.21-2.7-2.7-2.7H9.17v0c-1.48,0-2.7,1.21-2.7,2.7v52.53c0,1.48,1.21,2.7,2.7,2.7H76.7V76.4H3.05 C1.37,76.4,0,75.03,0,73.35V3.05C0,1.37,1.37,0,3.05,0L3.05,0L3.05,0z M42.27,80.61h27.67c0.07,4.79,2.04,9.07,7.39,12.45H34.89 C39.16,89.96,42.29,86.19,42.27,80.61L42.27,80.61L42.27,80.61z M56.11,66.12c2.16,0,3.92,1.75,3.92,3.92 c0,2.16-1.76,3.92-3.92,3.92c-2.16,0-3.92-1.75-3.92-3.92C52.19,67.88,53.94,66.12,56.11,66.12L56.11,66.12z M103.1,85.72 c1.59,0,2.89,1.28,2.89,2.89c0,1.59-1.28,2.89-2.89,2.89c-1.59,0-2.89-1.28-2.89-2.89C100.21,87.02,101.49,85.72,103.1,85.72 L103.1,85.72z M86.3,83.52h33.61V37.37H86.3V83.52L86.3,83.52z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="service__title">Digital Presence and Development</div>
             <div class="service_description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Incidunt, vel, numquam asperiores illum quaerat delectus culpa
-              tempora eius facere fugit nam reprehenderit.
+              We craft custom web and software solutions, deploy them on the
+              cloud, and manage your IT projects seamlessly.
+              <span><br /><br /> </span>
             </div>
           </div>
         </div>
@@ -115,21 +314,17 @@
     <div class="details__container">
       <div class="detail">
         <div class="detail__content">
-          <div class="detail__title">Lorem, ipsum dolor.</div>
+          <div class="detail__title">About Us</div>
           <div class="detail__description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-            repellendus impedit atque dolor ullam voluptate! Possimus asperiores
-            facere tenetur omnis a delectus, voluptatem, laudantium maiores
-            odio, perferendis doloremque officiis minus?
+            Founded in 2020, Johannesburg-based Nomndayi Technologies empowers
+            businesses nationwide with comprehensive IT solutions, from desktop
+            support to full infrastructure management, ensuring technology
+            seamlessly fuels your success.
           </div>
-          <a href="#" class="button detail--button">Learn More</a>
+          <a href="#" class="button detail--button">Read More</a>
         </div>
         <div class="detail__image">
-          <img
-            src="assets/images/info/telemetry.jpg"
-            alt=""
-            class="detail__img"
-          />
+          <img src="assets/images/custom/img.jpg" alt="" class="detail__img" />
           <img src="assets/patterns/circle.svg" alt="" class="detail__circle" />
         </div>
       </div>
@@ -137,7 +332,7 @@
       <div class="detail">
         <div class="detail__image">
           <img
-            src="assets/images/info/digital-era.jpg"
+            src="assets/images/custom/img-4.jpg"
             alt=""
             class="detail__img"
           />
@@ -148,14 +343,14 @@
           />
         </div>
         <div class="detail__content">
-          <div class="detail__title">Lorem, ipsum dolor.</div>
+          <div class="detail__title">Services</div>
           <div class="detail__description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-            repellendus impedit atque dolor ullam voluptate! Possimus asperiores
-            facere tenetur omnis a delectus, voluptatem, laudantium maiores
-            odio, perferendis doloremque officiis minus?
+            Nomndayi Technologies caters to the diverse IT needs of small
+            businesses. As experienced service providers, we offer a
+            comprehensive range of solutions tailored to address specific
+            challenges and proactively prevent future issues.
           </div>
-          <a href="#" class="button detail--button">Learn More</a>
+          <a href="#" class="button detail--button">Read More</a>
         </div>
       </div>
     </div>
@@ -165,11 +360,62 @@
         <div class="contact__details">
           <h1>Contact</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est veniam
-            soluta corrupti! At perferendis deleniti magnam quia, architecto
-            magni sapiente! Soluta ipsam ullam commodi aliquam ducimus itaque
-            reprehenderit a dolorum.
+            I'm excited to learn about your needs and how I can be of
+            assistance. Please fill out the form below, and I'll be in touch
+            promptly.
           </p>
+          <ul class="contact__details__list">
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                >
+                  <path
+                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                  />
+                </svg>
+                <span>094 032 2340</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                >
+                  <path
+                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                  />
+                </svg>
+                <span>sizwe@nomndayitech.co.za</span>
+              </a>
+            </li>
+            <li>
+              <a class="adr" href="#">
+                <svg
+                  class="adrI"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                >
+                  <path
+                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                  />
+                </svg>
+                <span>
+                  <span class="addr">Address : </span>
+                  Office 0602, Works@Market ,47 Von Brandis Street
+                  ,Johannesburg, 2001</span
+                >
+              </a>
+            </li>
+          </ul>
         </div>
         <form class="contact__form">
           <input
@@ -203,34 +449,81 @@
         <div class="nav__main">
           <div class="nav__brand">
             <a href="#">
-              <img
-                src="assets/logo-footer.svg"
-                alt="Brand Logo"
-                class="nav__logo"
-              />
+              <img src="assets/logo.png" alt="Brand Logo" class="nav__logo" />
             </a>
           </div>
           <ul class="navbar__footer">
-            <li><a href="about.html">About</a></li>
-            <li><a href="page.html">Location</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
           </ul>
         </div>
 
         <ul class="navbar__footer footer__socials">
           <li>
             <a href="#">
-              <img src="assets/icons/instagram.svg" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                width="24"
+                viewBox="0 0 509 509"
+              >
+                <g fill-rule="nonzero">
+                  <path
+                    fill="#438584"
+                    d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z"
+                  />
+                  <path
+                    fill="#333a44"
+                    d="M354.18 332.27l14.28-77.77h-83.13V227c0-41.1 16.13-56.91 57.86-56.91 12.96 0 23.39.32 29.4.95v-70.5c-11.38-3.16-39.2-6.33-55.33-6.33-85.04 0-124.24 40.16-124.24 126.78v33.51h-52.48v77.77h52.48v169.24c19.69 4.88 40.28 7.49 61.48 7.49 10.44 0 20.72-.64 30.83-1.86V332.27h68.85z"
+                  />
+                </g>
+              </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="assets/icons/twitter.svg" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                width="24"
+                clip-rule="evenodd"
+                viewBox="0 0 512 462.799"
+              >
+                <path
+                  fill="#438584"
+                  fill-rule="nonzero"
+                  d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
+                />
+              </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="assets/icons/facebook.svg" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                width="24"
+                viewBox="0 0 512 509.64"
+                fill="#438584"
+              >
+                <rect width="512" height="509.64" rx="115.61" ry="115.61" />
+                <path
+                  fill="#333a44"
+                  d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"
+                />
+              </svg>
             </a>
           </li>
         </ul>
