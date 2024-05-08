@@ -243,7 +243,7 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .close:hover {
@@ -254,8 +254,7 @@ a {
   width: 1rem;
   fill: var(--secondary-);
   cursor: pointer;
-  transition: all .1s ease-in-out;
-
+  transition: all 0.1s ease-in-out;
 }
 
 .close:hover > svg {
@@ -400,7 +399,233 @@ header {
   background: var(--secondary-);
 }
 
+/* Information Wrapper  */
+.information__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0 2rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* InformationContainer  */
+.information__container {
+  width: var(--mainWidth);
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 295px;
+  gap: 1.5rem;
+}
+
+/* information  */
+.information {
+  width: 100%;
+  min-width: 250px;
+  height: 325px;
+  cursor: pointer;
+
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+/* Information Image  */
+.information__image {
+  width: 100%;
+  height: 100%;
+}
+
+.information__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.information:hover .information__image img {
+  filter: brightness(1);
+}
+
+/* Information Content  */
+.information__content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* Information Title  */
+.information__content .title {
+  padding: 0.6rem 0 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  color: var(--secondary-);
+  letter-spacing: -2px;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Information Text  */
+.information__content .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  opacity: 0.8;
+  color: var(--secondary);
+  transition: all 0.1s ease-in-out;
+}
+.information:hover .information__content .text {
+  opacity: 1;
+}
+
+/* Information Button  */
+.information__content .btn__details {
+  color: var(--secondary-);
+  font-weight: bold;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.information__content .btn__details:hover {
+  color: var(--accent);
+}
+
+.information__content .btn__details svg {
+  width: 0.5rem;
+  fill: var(--secondary-);
+  transition: all 0.1s ease-in-out;
+  padding: 0 0 0.1rem 0;
+}
+.information__content .btn__details:hover svg {
+  fill: var(--accent);
+}
+
+/* Information Side Wrapper */
+.information__side__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Information Side  */
+.information__side {
+  width: 100%;
+  height: auto;
+
+  padding: 0.9rem 0;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.information__side:first-child {
+  padding: 0 0 0.9rem 0;
+}
+
+.information__side:nth-child(2) {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+}
+
+/* Information Side Image */
+.information__side__image {
+  width: 100%;
+  height: 4.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information__side__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Information Side Content  */
+.information__side__content {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex-direction: column;
+}
+
+.information__side__content .title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  color: var(--secondary-);
+  padding: 0 0 0.5rem 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.information__side:hover .information__side__content .title {
+  color: var(--accent);
+}
+.information__side__content .text {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--secondary-);
+}
+
+@media (max-width: 1050px) {
+  .information__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .information__side__wrapper {
+    flex-direction: row;
+    gap: 1rem;
+    grid-column: span 2;
+  }
+  .information__side:first-child {
+    padding: 0.9rem 0;
+  }
+  .information__side:nth-child(2) {
+    border: none;
+  }
+  .information__side {
+    grid-template-columns: 5rem 1fr;
+  }
+  .information__side__image {
+    height: 5rem;
+  }
+}
+
 @media (max-width: 950px) {
+  .information__container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: .5rem;
+  }
+  .information__side {
+    grid-template-columns: 1fr;
+  }
+  .information__side__image {
+    height: 8rem;
+  }
   .top__information {
     display: none;
   }
@@ -441,6 +666,19 @@ header {
 }
 
 @media (max-width: 750px) {
+  .information__side__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: .5rem;
+  }
+
+  .information__side:last-child {
+    grid-column: span 2;
+  }
+  .information__side:last-child .information__side__image{
+    height: 15rem;
+  }
   .header__controls__wrapper {
     top: 90%;
     justify-content: flex-end;
@@ -476,6 +714,36 @@ header {
   .header__content p {
     width: 80%;
   }
+
+  .information__side__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    row-gap: .5rem;
+  }
+  .information__side:last-child {
+    grid-column: span 1;
+  }
+  .information__side__image{
+    height: 15rem;
+  }
+  .information__container {
+    width: var(--mainWidth);
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .information {
+    width: 100%;
+    min-width: 100px;
+    height: 325px;
+    cursor: pointer;
+  
+    display: grid;
+    grid-template-rows: 200px 1fr;
+  }
+
 }
 
 @media (max-width: 475px) {
@@ -493,6 +761,23 @@ header {
 
   header {
     height: 550px;
+  }
+
+  .information {
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+    padding: 0 0 .5rem 0;
+    cursor: pointer;
+  
+    display: grid;
+    grid-template-rows: 200px 1fr;
+  }
+
+  .information__content .text {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0 0 .5rem 0;
   }
 }
 
