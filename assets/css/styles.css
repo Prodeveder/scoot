@@ -372,7 +372,6 @@ header {
   padding: 5rem 0 0.5rem 0;
   text-align: center;
   text-shadow: 1px 1px 2px #000;
-
 }
 
 .header__content p {
@@ -605,7 +604,6 @@ header {
   align-items: center;
 
   padding: 1rem 0;
-
 }
 
 /* Contact Us Banner  */
@@ -670,7 +668,7 @@ header {
 }
 
 .who__we__are__grid:last-child {
-  height: 100px;
+  height: auto;
 }
 
 /* Who we are Images  */
@@ -685,7 +683,7 @@ header {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .who__we__are__image img:hover {
@@ -722,9 +720,8 @@ header {
   transition: all 0.1s ease-in-out;
 }
 
-
 /* Who we are btn  */
-.who__we__are__content  .btn__details {
+.who__we__are__content .btn__details {
   color: var(--secondary-);
   font-weight: bold;
 
@@ -755,11 +752,11 @@ header {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .who__we__are__card:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 /* Who we are Card Title  */
@@ -768,15 +765,15 @@ header {
   justify-content: flex-start;
   align-items: center;
 
-  gap: .5rem;
+  gap: 0.5rem;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1;
   color: var(--secondary-);
   letter-spacing: -1px;
   transition: all 0.1s ease-in-out;
-  padding: 0 0 .5rem 0;
-} 
+  padding: 0 0 0.5rem 0;
+}
 
 .who__we__are__card .title svg {
   width: 1.6rem;
@@ -793,12 +790,347 @@ header {
   padding: 0 0 0 2rem;
 }
 
+/* Why Us Wrapper  */
+.why__us__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0;
+  background: var(--primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Why Us Container  */
+.why__us__container {
+  width: var(--mainWidth);
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Why Us Content  */
+.why__us__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.why__us__content .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--secondary-);
+  letter-spacing: -1px;
+  transition: all 0.1s ease-in-out;
+  padding: 0 0 1.5rem 0;
+  cursor: pointer;
+}
+
+.why__us__content .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 0.8;
+  color: var(--secondary);
+  transition: all 0.1s ease-in-out;
+}
+
+.why__us__content .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+
+.why__us__content .list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.why__us__content .list li:hover {
+  transform: scale(1.1);
+}
+
+.why__us__content .list li span {
+  padding: 0 0 0.2rem 0;
+  color: var(--secondary);
+  text-shadow: 1px 1px 2px #00000018;
+}
+
+.why__us__content .list li svg {
+  width: 1rem;
+  fill: var(--accent);
+}
+
+/* Why Us Image  */
+.why__us__image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.why__us__image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.9s ease-in-out;
+}
+
+.why__us__image img:hover {
+  transform: scale(1.5);
+}
+
+/* What We do wrapper  */
+.what__we__do__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 2.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* What we do Title  */
+.what__we__do__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: var(--secondary-);
+  letter-spacing: -1px;
+  transition: all 0.1s ease-in-out;
+  padding: 0 0 1rem 0;
+  cursor: pointer;
+  width: 600px;
+  text-align: center;
+}
+
+/* What we do Grid  */
+.what__we__do__grid {
+  width: var(--mainWidth);
+  height: auto;
+  padding: 1rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* What we do  */
+.what__we__do {
+  width: 100%;
+  height: 235px;
+  /* background: var(--secondary); */
+
+  display: grid;
+  grid-template-rows: 175px 1fr;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+/* What We Do Image  */
+.what__we__do__image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.what__we__do__image img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.8s ease-in-out;
+}
+
+.what__we__do:hover .what__we__do__image img {
+  transform: scale(1.5);
+}
+
+/* What we do content  */
+.what__we__do__content {
+  width: 100%;
+  height: 100%;
+}
+
+.what__we__do__content .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: var(--secondary-);
+  letter-spacing: -1px;
+  transition: all 0.1s ease-in-out;
+  padding: 0 0 0rem 0;
+  cursor: pointer;
+}
+
+.what__we__do:hover .what__we__do__content .title {
+  text-decoration: underline;
+}
+
+.what__we__do__content .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.8;
+  color: var(--secondary);
+  transition: all 0.1s ease-in-out;
+}
+
+.what__we__do__wrapper .btn__details {
+  color: var(--secondary-);
+  font-weight: bold;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.1s ease-in-out;
+  padding:1rem 0 0 0;
+}
+
+.what__we__do__wrapper .btn__details:hover {
+  color: var(--accent);
+}
+
+.what__we__do__wrapper .btn__details svg {
+  width: 0.5rem;
+  fill: var(--secondary-);
+  transition: all 0.1s ease-in-out;
+  padding: 0 0 0.1rem 0;
+}
+.what__we__do__wrapper .btn__details:hover svg {
+  fill: var(--accent);
+}
+
+/* Proof Wrapper  */
+.proof__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Proof Container  */
+.proof__container {
+  width: var(--mainWidth);
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Proof  */
+.proof {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.proof .text {
+  color: var(--secondary);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  font-style: italic;
+  
+}
+
+.proof .text span {
+  opacity: .7;
+}
+
+.proof .text svg{
+  fill: var(--secondary);
+  height: 1.2rem;
+  transition: all .2s ease-in-out;
+}
+
+.proof:hover svg {
+  fill: var(--accent);
+}
+.proof .text svg:last-child {
+  padding: 0 0 0 .2rem;
+}
+
+.proof__by {
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 1px 1px 2px transparent;
+  transition: all .2s ease-in-out;
+
+}
+.proof:hover .proof__by {
+  color: var(--accent);
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+.proof__by span {
+  font-weight: 400;
+  font-size: 14px;
+  opacity: .8;
+  transition: all .2s ease-in-out;
+}
+
+.proof:hover .proof__by span {
+  text-shadow:none;
+  color: var(--secondary);
+}
+.n {
+  padding: inherit inherit 1.5rem inherit;
+  height: 250px;
+}
 
 @media (max-width: 1050px) {
-
   .who__we__are__grid {
     grid-template-columns: 1fr 1fr;
-    row-gap: .8rem;
+    row-gap: 0.8rem;
   }
   .who__we__are__image:last-child {
     grid-column: span 2;
@@ -806,7 +1138,6 @@ header {
   }
   .who__we__are__card:last-child {
     grid-column: span 2;
-    padding:  0 0 1rem 0;
   }
   .who__we__are__content {
     height: 200px;
@@ -832,9 +1163,23 @@ header {
   .information__side__image {
     height: 5rem;
   }
+
+  .why__us__content .text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 950px) {
+  .why__us__content .list {
+    padding: 1rem 0 0 0;
+  }
+  .why__us__container {
+    width: var(--mainWidth);
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 2rem; */
+  }
   .information__container {
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
@@ -855,6 +1200,19 @@ header {
 }
 
 @media (max-width: 850px) {
+  .what__we__do__grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .what__we__do:last-child {
+    grid-column: span 2;
+  }
+  .proof__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .proof:last-child {
+    grid-column: span 2;
+  }
   .navbar li.menu {
     display: block;
     padding: 0 0;
@@ -912,9 +1270,17 @@ header {
 }
 
 @media (max-width: 650px) {
+  .what__we__do__title {
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+    padding: 0 0 .5rem 0;
+  }
   .who__we__are__grid {
     grid-template-columns: 1fr;
-    row-gap: .8rem;
+    row-gap: 0.8rem;
   }
 
   .who__we__are__image:last-child {
@@ -923,12 +1289,12 @@ header {
   }
   .who__we__are__card:last-child {
     grid-column: span 1;
-    padding:  0 0 1rem 0;
+    padding: 0 0 1rem 0;
   }
 
   .who__we__are__content {
     height: 150px;
-    padding: 0 0 .5rem 0;
+    padding: 0 0 0.5rem 0;
   }
 
   .who__we__are__grid:last-child {
@@ -999,12 +1365,46 @@ header {
   }
 }
 
+@media (max-width: 550px) {
+  .what__we__do__grid {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .what__we__do:last-child {
+    grid-column: span 1;
+  }
+
+  .proof__container {
+    grid-template-columns: 1fr ;
+  }
+  .proof:last-child {
+    grid-column: span 1;
+    border-bottom: none;
+  }
+
+  .proof {
+    border-bottom: 2px solid var(--primary);
+    padding: 0 0 1rem 0;
+  }
+}
+
 @media (max-width: 475px) {
+  .why__us__content .title {
+    text-align: left;
+    padding: 0 0 1rem 0;
+  }
+  .why__us__content .list li {
+    font-size: 12px;
+  }
+  .why__us__content .list li span {
+    padding: 0;
+  }
 
   .who__we__are__content {
     height: auto;
-    padding: 0 0 .5rem 0;
-    gap: .5rem;
+    padding: 0 0 0.5rem 0;
+    gap: 0.5rem;
   }
   .contact__us__banner span {
     text-align: center;
