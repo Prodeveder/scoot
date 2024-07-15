@@ -86,6 +86,11 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  /* Footer Item P  */
+  .footer__item p {
+    width: 90%;
+  }
 }
 
 @media (max-width: 750px) {
@@ -98,6 +103,16 @@
   header .btn {
     font-size: 1rem;
     padding: 1rem 1.5rem;
+  }
+
+  /* Footer Item P  */
+  .footer__item p {
+    width: 95%;
+  }
+
+  /* Footer Container  */
+  .footer__container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -156,6 +171,14 @@
   .support__content .text {
     font-size: 14px;
     width: 95%;
+  }
+
+  /* Footer Bottom  */
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
 
@@ -234,6 +257,60 @@
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
+
+  /* Footer Item  */
+  .footer__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Footer Item P*/
+  .footer__item p {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  /* Footer Item Title*/
+  .footer__item .title {
+    text-align: center;
+  }
+
+  /* Footer Item Input*/
+  .footer__item input {
+    width: 95%;
+  }
+
+  /* Footer Item Form*/
+  .footer__item form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__item:last-child {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__item ul {
+    flex-direction: row;
+    gap: 0.8rem;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  /* Footer Bottom */
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 425px) {
@@ -267,11 +344,11 @@
     width: 90%;
   }
 
-    /* Support Content Title*/
-    .support__content .title {
-      font-size: 1.8rem;
-      line-height: 1.8rem;
-      width: 95%;
-      min-width: 350px;
-    }
+  /* Support Content Title*/
+  .support__content .title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    width: 95%;
+    min-width: 350px;
+  }
 }
