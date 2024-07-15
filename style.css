@@ -577,10 +577,9 @@ section hr {
 }
 
 /* Support Content Title Span*/
-.support__content .title span { 
-	color: var(--primary-accent);
+.support__content .title span {
+  color: var(--primary-accent);
 }
-
 
 /* Support Content Text*/
 .support__content .text {
@@ -592,10 +591,125 @@ section hr {
 
 /* Support Content Btn*/
 .support__content .btn {
-	padding: 1rem 2rem;
-	border-radius: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
 
+/* Accordion Wrapper  */
+.accordion__wrapper {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Accordion Item  */
+.accordion__item {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px rgb(0 0 0 /0.25);
+  border-radius: 0.2rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.accordion__item:first-child .accordion__panel {
+	display: block;
+}
+
+/* Accordion Content  */
+.accordion__content {
+  width: 92%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+/* Accordion Header  */
+.accordion__header {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Accordion Header span  */
+.accordion__header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: var(--text-primary);
+}
+
+/* Icon Wrapper  */
+.icon__Wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Icon Wrapper Ico */
+.icon__Wrapper .ico {
+  background: #ddd;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-accent);
+  border-radius: 100%;
+}
+
+.icon__Wrapper i.ico_minus {
+  display: none;
+}
+
+/* Accordion Panel  */
+.accordion__panel {
+  width: 100%;
+  height: auto;
+  color: var(--text-primary);
+  opacity: 0.8;
+
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-50px);
+  animation: panel 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.accordion__panel div {
+	padding: 0 0 1rem 0;
+}
+
+/* Accordion Panel Btn */
+.accordion__panel .btn{ 
+	margin: 0 0 1em 0;
+}
+
+
+
+@keyframes panel {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* Headings */
 h1 {
   font-size: 54px;
