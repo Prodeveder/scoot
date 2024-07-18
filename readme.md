@@ -31,8 +31,8 @@ Detailed documentation is available on our [documentation page](https://www.kwik
 
 If you need help or have any questions, you can reach us via:
 
-- **Email**: support@kwikpos.com
-- **Phone**: +1 (800) 123-4567
-- **Live Chat**: Available on our [website](https://www.kwikpos.com)
+- **Email**: support@kwikpos.co.za
+- **Phone**: 011 614 0003
+- **Live Chat**: Available on our [website](https://kwikpos.co.za/)
 
 ## Pricing
