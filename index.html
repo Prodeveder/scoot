@@ -32,15 +32,15 @@
     <!-- Favicon -->
     <link
       rel="icon"
-      href="point_of_sale_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+      href="assets/images/logo/point_of_sale_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
       type="image/svg+xml"
     />
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="index.html" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <div class="mobile__nav__wrapper">
@@ -63,12 +63,13 @@
         <ul class="navbar mobile">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="features.html">Features</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav__item mobile">
-          <a href="#" class="btn fill__up">Sign in</a>
-          <a href="#" class="btn fill">Sign up</a>
+          <a href="login.html" class="btn fill__up">Sign in</a>
+          <a href="signup.html" class="btn fill">Sign up</a>
         </div>
       </div>
     </div>
@@ -93,12 +94,13 @@
         <ul class="navbar desktop">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="features.html">Features</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="nav__item desktop">
-          <a href="#" class="btn">Sign in</a>
-          <a href="#" class="btn fill">Sign up</a>
+          <a href="login.html" class="btn">Sign in</a>
+          <a href="signup.html" class="btn fill">Sign up</a>
         </div>
         <div class="menu">
           <svg
@@ -125,7 +127,11 @@
         comprehensive sales reports, all in one easy-to-use platform designed to
         streamline your operations and boost efficiency
       </p>
-      <div class="btn fill">Get Started - it's free</div>
+      <a
+        href="signup.html"
+        class="btn fill"
+        >Get Started - it's free</a
+      >
     </header>
     <section>
       <div class="grid col_1_2">
@@ -282,7 +288,7 @@
       </div>
     </section>
     <div class="support__wrapper">
-      <img src="images/point__of__sale.jpg" alt="Retail Image" />
+      <img src="assets/images/point__of__sale.jpg" alt="Retail Image" />
       <div class="support__container">
         <div class="support__content">
           <h3 class="title">
@@ -297,7 +303,7 @@
             maximizing the efficiency and functionality of KwikPos.
           </p>
 
-          <a href="#" class="btn fill">Contact Us</a>
+          <a href="contact.html" class="btn fill">Contact Us</a>
         </div>
       </div>
     </div>
@@ -419,7 +425,7 @@
           customer interactions effortlessly.
         </p>
 
-        <a href="" class="btn fill">Sign Up for a Free Trail</a>
+        <a href="pricing.html" class="btn fill">Sign Up for a Free Trail</a>
       </div>
     </section>
     <footer>
@@ -440,8 +446,6 @@
                   />
                 </svg>
                 <div>Kwik<span>Pos</span></div>
-
-                
               </div>
             </a>
             <p>
@@ -453,9 +457,10 @@
             <div class="item">
               <div class="title">Quick Links</div>
               <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
@@ -472,38 +477,17 @@
               <ul class="socials">
                 <li>
                   <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
-                      />
-                    </svg>
+                    <i class="fa-brands fa-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"
-                      />
-                    </svg>
+                    <i class="fa-brands fa-square-x-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      />
-                    </svg>
+                    <i class="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
