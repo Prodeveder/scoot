@@ -153,6 +153,11 @@
   .footer__container {
     grid-template-columns: 1fr;
   }
+
+  /* Sign Up Header  */
+  .sign__up__header {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 650px) {
@@ -186,6 +191,23 @@
     line-height: 2.5rem;
     width: 90%;
     min-width: 350px;
+  }
+
+  /* Sign Up Wrapper  */
+  .sign__up__wrapper {
+    width: 70%;
+    padding: 3rem 2rem;
+    min-width: 100px;
+  }
+
+  /* Sign Up Header Item*/
+  .sign__up__item {
+    font-size: 14px;
+  }
+
+  /* Form Content Title  */
+  .form__content .title {
+    font-size: 2rem;
   }
 }
 
@@ -241,6 +263,22 @@
   /* Contact Map  */
   .contact__map iframe {
     height: 350px;
+  }
+
+  /* Sign Up Header  */
+  .sign__up__header {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Sign Up Wrapper  */
+  .sign__up__wrapper {
+    height: 850px;
+  }
+
+  /* Main Form  */
+  .main__form {
+    width: 100%;
+    height: 85%;
   }
 }
 
